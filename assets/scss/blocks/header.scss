@@ -1,0 +1,30 @@
+.container-xl {
+  background-color: white;
+  min-height: 100%;
+}
+
+
+.header {
+  .nav-item {
+  width: 140px;
+  background-color: #F5F3E8;
+
+    span {
+      font-size: 18px;
+      border-bottom: 1px dotted #707070;
+    }
+
+    &:hover {
+      background-color: darken($color: #F5F3E8, $amount: 9%);
+    
+      span {
+        color: black;
+      }
+    }
+  }
+
+  .nav-item.active {
+  background-color: #8FB52C;
+  }
+}
+

@@ -1,11 +1,39 @@
-body {
-  height: 100%;
-}
-
-.container-xl {
-  background-color: white;
-}
-
 .main {
-  padding:0 128px;
+  padding: 0 128px;
+
+  .title {
+    font-size: 15px;
+
+    .card-subtitle {
+      margin: 7px 0;
+    }
+
+    .description{
+      line-height: 1;
+      .cheese-link {
+      font-size: 30px;
+      font-family: 'Exo 2', sans-serif;
+      font-weight: 300;
+      text-decoration: none;
+      border-bottom: 1px dotted #707070;
+
+      &:hover {
+        border-bottom: 1px dotted #007bff;
+      }
+
+      span {
+        font-size: 20px;
+      }
+      }
+    }
+
+    .logo-small {
+      height: 30px;
+      margin: 8px 0;
+    }
+
+    p {
+      line-height: 1.1;
+    }
+  }
 }

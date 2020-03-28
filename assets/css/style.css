@@ -1,14 +1,58 @@
 @charset "UTF-8";
-body {
-  height: 100%;
+.main {
+  padding: 0 128px;
+}
+.main .title {
+  font-size: 15px;
+}
+.main .title .card-subtitle {
+  margin: 7px 0;
+}
+.main .title .description {
+  line-height: 1;
+}
+.main .title .description .cheese-link {
+  font-size: 30px;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  border-bottom: 1px dotted #707070;
+}
+.main .title .description .cheese-link:hover {
+  border-bottom: 1px dotted #007bff;
+}
+.main .title .description .cheese-link span {
+  font-size: 20px;
+}
+.main .title .logo-small {
+  height: 30px;
+  margin: 8px 0;
+}
+.main .title p {
+  line-height: 1.1;
 }
 
 .container-xl {
   background-color: white;
+  min-height: 100%;
 }
 
-.main {
-  padding: 0 128px;
+.header .nav-item {
+  width: 140px;
+  background-color: #F5F3E8;
+}
+.header .nav-item span {
+  font-size: 18px;
+  border-bottom: 1px dotted #707070;
+}
+.header .nav-item:hover {
+  background-color: #e7e2c8;
+}
+.header .nav-item:hover span {
+  color: black;
+}
+.header .nav-item.active {
+  background-color: #8FB52C;
 }
 
 /*!
@@ -134,12 +178,12 @@ sup {
 }
 
 a {
-  color: #007bff;
+  color: black;
   text-decoration: none;
   background-color: transparent;
 }
 a:hover {
-  color: #0056b3;
+  color: #007bff;
   text-decoration: underline;
 }
 
@@ -4625,11 +4669,11 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #007bff;
+  color: black;
   text-decoration: none;
 }
 .btn-link:hover {
-  color: #0056b3;
+  color: #007bff;
   text-decoration: underline;
 }
 .btn-link:focus, .btn-link.focus {
@@ -5190,13 +5234,13 @@ a.badge-dark:focus, a.badge-dark.focus {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #007bff;
+  color: black;
   background-color: #fff;
   border: 1px solid #dee2e6;
 }
 .page-link:hover {
   z-index: 2;
-  color: #0056b3;
+  color: #007bff;
   text-decoration: none;
   background-color: #e9ecef;
   border-color: #dee2e6;
@@ -7593,7 +7637,6 @@ mark,
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
 }
 .card > hr {
@@ -7620,7 +7663,7 @@ mark,
 }
 
 .card-subtitle {
-  margin-top: -0.375rem;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
