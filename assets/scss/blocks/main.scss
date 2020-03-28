@@ -1,5 +1,7 @@
+
+
 .main {
-  padding: 0 128px;
+  padding: 0 100px;
 
   .title {
     font-size: 15px;
@@ -35,5 +37,13 @@
     p {
       line-height: 1.1;
     }
+  }
+
+  @media (max-width: 768px) {
+    padding: 20px 60px;
+  }
+
+  @media (max-width: 576px) {
+    padding: 10px 20px;
   }
 }
